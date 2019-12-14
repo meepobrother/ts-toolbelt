@@ -1,10 +1,10 @@
 import {_Function} from './_Internal'
-import {Tuple} from '../Tuple/Tuple'
+import {List} from '../List/List'
 
-/** Alias to create a **`Function`**
+/** Alias to create a [[Function]]
  * @param P parameters
  * @param R return type
- * @returns **`Function`**
+ * @returns [[Function]]
  * @example
  * ```ts
  * import {F} from 'ts-toolbelt'
@@ -13,5 +13,6 @@ import {Tuple} from '../Tuple/Tuple'
  * /// (args_0: string, args_1: number) => boolean
  * ```
  */
-export type Function<P extends Tuple = any, R extends any = any> =
-    ((...args: P) => R) & _Function
+export interface Function<P extends List = any, R extends any = any> {
+    (...args: P): R
+}

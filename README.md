@@ -3,7 +3,7 @@
     <img alt="logo" title="ts-toolbelt" src="https://raw.githubusercontent.com/pirix-gh/ts-toolbelt/master/.github/logo.png" width="300" alt="Logo">
   </a>
   <h1 align="center">ts-toolbelt</h1>
-  <h3 align="center">🔩 Get the most out of TypeScript</h3>
+  <h3 align="center">Get the most out of TypeScript</h3>
   <br>
   <p align="center">
     <a href="https://pirix-gh.github.io/ts-toolbelt/">📖 Read Docs</a>
@@ -77,24 +77,27 @@
 
 ## 📜 About
 
-**ts-toolbelt** is a **type library** that provides simple ways to update, change, and compute **TypeScript types**.
+<h4 align="center"><i>If your goal is to avoid bugs by writing quality types, this library is made for you.</i></h4><br>
+
+**ts-toolbelt** is a **type library** that provides simple ways to **update**, **change**, and **compute** TypeScript types.
 
 With its programmatic API, you can write type-safe software more **easily** and in **less time** than you do today.
 
-This brings **new capabilities** to TypeScript thanks to **+200** tested types. This makes it the largest, and most reliable type collection out there.
+It brings **new capabilities** to TypeScript with **+200** tested type utilities. This makes it the largest, and most reliable type collection out there.
 It uses the type system itself for TypeScript to compute complex types. So its API exposes types that trade **CPU & RAM** for higher type safety.
 
 You'll find all the types you can ever need in this single and **well organized** package.
 
-#### Goals
+### Goals
 
 * Answer the question to **"How do I do this in TypeScript?"**
 * Provide a lodash-like **programmatic API** for the type system
-* Software that is more **type-safe**, **flexible**, and **robust**
+* Promote type **evolution** & **reusability** within your codebase
 * Computed types are always **readable**, like if you typed it
-* High [**performance**](https://gist.github.com/pirix-gh/02097996d2a1e4e7aa2d54b330451ea0), so it will not bloat TS (~ +2sec, +50MB)
+* Software that is more **type-safe**, **flexible**, and **robust**
 * Bring a whole new set of extra **features** to TypeScript
 * This package aims to be the home of all **utility types**
+* High [**performance**](https://gist.github.com/pirix-gh/02097996d2a1e4e7aa2d54b330451ea0), so it will not bloat TS (~ +2sec, +50MB)
 
 ## 🍩 Features
 
@@ -104,9 +107,30 @@ Here's some of the most useful features:
 * [Update the field of a type](https://pirix-gh.github.io/ts-toolbelt/modules/_object_update_.html#update)
 * [Make some fields optional](https://pirix-gh.github.io/ts-toolbelt/modules/_object_optional_.html#optional)
 * [Change a type at any depth!](https://pirix-gh.github.io/ts-toolbelt/modules/_object_p_update_.html#update)
-* [Concat two tuples together](https://pirix-gh.github.io/ts-toolbelt/modules/_tuple_concat_.html#concat)
-* [Get the last item of a tuple](https://pirix-gh.github.io/ts-toolbelt/modules/_tuple_last_.html#last)
-* ... **and so much more**
+* [Concat two lists together](https://pirix-gh.github.io/ts-toolbelt/modules/_list_concat_.html#concat)
+* [Get the last item of a list](https://pirix-gh.github.io/ts-toolbelt/modules/_list_last_.html#last)
+<details>
+<summary>
+<b>Expand to See More</b>
+</summary>
+
+| Object                                                                                          | List                                                                                  | Function                                                                                      | Any                                                                                           |
+|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| [Exclude](https://pirix-gh.github.io/ts-toolbelt/modules/_object_exclude_.html)                 | [Append](https://pirix-gh.github.io/ts-toolbelt/modules/_list_append_.html)           | [NoInfer](https://pirix-gh.github.io/ts-toolbelt/modules/_function_noinfer_.html)             | [Promisable](https://pirix-gh.github.io/ts-toolbelt/modules/_any_promisable_.html)            |
+| [Filter](https://pirix-gh.github.io/ts-toolbelt/modules/_object_filter_.html)                   | [Drop](https://pirix-gh.github.io/ts-toolbelt/modules/_list_drop_.html)               | [Promisify](https://pirix-gh.github.io/ts-toolbelt/modules/_misc_promisify_.html)             |                                                                                               |
+| [MergeUp](https://pirix-gh.github.io/ts-toolbelt/modules/_object_mergeup_.html)                 | [Flatten](https://pirix-gh.github.io/ts-toolbelt/modules/_list_flatten_.html)         |                                                                                               |                                                                                               |
+| [NonNullable](https://pirix-gh.github.io/ts-toolbelt/modules/_object_nonnullable_.html)         | [Concat](https://pirix-gh.github.io/ts-toolbelt/modules/_list_concat_.html)           |                                                                                               |                                                                                               |
+| [Nullable](https://pirix-gh.github.io/ts-toolbelt/modules/_object_nullable_.html)               | [Pop](https://pirix-gh.github.io/ts-toolbelt/modules/_list_pop_.html)                 |                                                                                               |                                                                                               |
+| [Optional](https://pirix-gh.github.io/ts-toolbelt/modules/_object_optional_.html)               | [Reverse](https://pirix-gh.github.io/ts-toolbelt/modules/_list_reverse_.html)         |                                                                                               |                                                                                               |
+| [P/Update](https://pirix-gh.github.io/ts-toolbelt/modules/_object_p_update_.html)               | [Tail](https://pirix-gh.github.io/ts-toolbelt/modules/_list_tail_.html)               |                                                                                               |                                                                                               |
+| [PathUp](https://pirix-gh.github.io/ts-toolbelt/modules/_object_pathup_.html)                   |                                                                                       |                                                                                               |                                                                                               |
+| [Required](https://pirix-gh.github.io/ts-toolbelt/modules/_object_required_.html)               |                                                                                       |                                                                                               |                                                                                               |
+| [Select](https://pirix-gh.github.io/ts-toolbelt/modules/_object_select_.html)                   |                                                                                       |                                                                                               |                                                                                               |
+| [Update](https://pirix-gh.github.io/ts-toolbelt/modules/_object_update_.html)                   |                                                                                       |                                                                                               |                                                                                               |
+| [Writable](https://pirix-gh.github.io/ts-toolbelt/modules/_object_writable_.html)               |                                                                                       |                                                                                               |                                                                                               |
+
+> **`TIP`** [Add something to this list](https://github.com/pirix-gh/ts-toolbelt/edit/master/README.md)
+</details>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/pirix-gh/ts-toolbelt/master/.github/demo.gif" id="demo" width="750px">
@@ -116,7 +140,7 @@ Here's some of the most useful features:
 
 ## 🏁 Getting Started
 
-#### Prerequisites
+### Prerequisites
 
 Lowest TypeScript [support](#-compatibility) starts at v3.5
 
@@ -136,13 +160,13 @@ For best results, add this to your `tsconfig.json`
 }
 ```
 
-#### Installation
+### Installation
 
 ```sh
 npm install ts-toolbelt --save
 ```
 
-#### Hello World
+### Hello World
 
 ```ts
 import {Object} from 'ts-toolbelt'
@@ -150,30 +174,37 @@ import {Object} from 'ts-toolbelt'
 
 // Merge two `object` together
 type merge = Object.MergeUp<{name: string}, {age?: number}>
+// {name: string, age?: number}
+
+// Make a field of an `object` optional
+type optional = Object.Optional<{id: number, name: string}, 'name'}>
+// {id: number, name?: string}
 ```
 
 > **`TIP`** You can also grab the demo [over here](https://gist.github.com/pirix-gh/f7f7d18773f79bf0618fb5cd55bd48f8)
+
+You can [**level-up, and re-code this library from scratch**](https://medium.com/free-code-camp/typescript-curry-ramda-types-f747e99744ab).
 
 ## [📖 Documentation ⤢](https://pirix-gh.github.io/ts-toolbelt/)
 
 The project is organized around TypeScript's main concepts:
 
-|              |                    |              |                |                 |              |
-|--------------|--------------------|--------------|----------------|-----------------|--------------|
-| **A**ny      | **B**oolean        | **C**lass    | **F**unction   | **I**teration   | **N**umber   |
-| **O**bject   | **O**bject.**P**   | **S**tring   | **T**uple      | **U**nion       | Test         |
+|            |             |                  |              |               |          |
+|------------|-------------|------------------|--------------|---------------|----------|
+| **A**ny    | **B**oolean | **C**lass        | **F**unction | **I**teration | **L**ist |
+| **N**umber | **O**bject  | **O**bject.**P** | **S**tring   | **U**nion     | Test     |
 
-> **`TIP`** match the type kind you need to operate on with the above categories
+> **`TIP`** match the type you need to work with with the above
 
 **The documentation is complete but needs more examples**. So feel free to [ask for examples](https://github.com/pirix-gh/ts-toolbelt/issues/new?template=---question.md), and I will update the docs.
 
-#### Imports
+### Imports
 
 There are many ways to import the types into your project:
 
 * Explicit
   ```ts
-  import {Any, Boolean, Class, Function, Iteration, Number, Object, String, Tuple, Union} from 'ts-toolbelt'
+  import {Any, Boolean, Class, Function, Iteration, List, Number, Object, String, Union} from 'ts-toolbelt'
   ```
 
 * Compact
@@ -186,12 +217,12 @@ There are many ways to import the types into your project:
   import tb from 'ts-toolbelt'
   ```
 
-#### Internal Docs
+### Internal Docs
 
 If you're interested to **learn** how the internals work, [this tutorial](https://medium.com/free-code-camp/typescript-curry-ramda-types-f747e99744ab) will get you on track to start writing your own types.
 
 
-#### [Archives ⤢](https://github.com/pirix-gh/ts-toolbelt/tree/gh-pages)
+### [Archives ⤢](https://github.com/pirix-gh/ts-toolbelt/tree/gh-pages)
 
 Access older docs at https://pirix-gh.github.io/ts-toolbelt/version/
 
@@ -211,17 +242,17 @@ Stay up to date with the latest announcements with this regular digest of import
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. There are many ways to contribute to the project:
 
-#### Community
+### Community
 
 * [Help the community with answers on Gitter](https://gitter.im/ts-toolbelt/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 * [Reporting bugs or requesting new features](https://github.com/pirix-gh/ts-toolbelt/issues/new/choose)
 
-#### Codebase
+### Codebase
 
 * Improving existing documentation 
 * Adding new types to the collection
 
-#### Pull Requests
+### Pull Requests
 
 1. [Read the tutorial](https://medium.com/free-code-camp/typescript-curry-ramda-types-f747e99744ab)
 
@@ -254,7 +285,7 @@ Contributions are what make the open source community such an amazing place to l
 
 ## 💉 Running tests
 
-#### For this project
+### For this project
 
 To run the `lint` & `type` tests, simply run:
 
@@ -262,7 +293,7 @@ To run the `lint` & `type` tests, simply run:
 npm test
 ```
 
-#### For your project
+### For your project
 
 Want to test your own types? Let's get started:
 
@@ -279,7 +310,7 @@ checks([
 
 > **`TIP`** Place it in a file that won't be executed, it's just for TypeScript to test types
 
-#### Continuous Integration
+### Continuous Integration
 
 The releases are done with Travis CI in stages & whenever a branch or PR is pushed:
 

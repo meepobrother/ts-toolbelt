@@ -1,3 +1,8 @@
+/** @ignore *//** */
+
+import * as P from './P/_api'
+
+export {P}
 export {Assign} from './Assign'
 export {AssignUp} from './AssignUp'
 export {At} from './At'
@@ -5,8 +10,6 @@ export {Compulsory} from './Compulsory'
 export {CompulsoryKeys} from './CompulsoryKeys'
 export {Diff} from './Diff'
 export {Either} from './Either'
-export {Clean} from './Clean'
-export {Clean as Ensure} from './Clean'
 export {Exclude} from './Exclude'
 export {ExcludeKeys} from './ExcludeKeys'
 export {Filter} from './Filter'
@@ -42,14 +45,14 @@ export {Required} from './Required'
 export {RequiredKeys} from './RequiredKeys'
 export {Select} from './Select'
 export {SelectKeys} from './SelectKeys'
-export {TupleOf} from './TupleOf'
+export {ListOf} from './ListOf'
 export {Unionize} from './Unionize'
 export {UnionOf} from './UnionOf'
 export {Update} from './Update'
 export {Writable} from './Writable'
 export {WritableKeys} from './WritableKeys'
 
-import * as P from './P/_api'
-export {
-    P,
-}
+// LEGACY
+
+export {Clean as Ensure} from '../Any/Clean'
+export {ListOf as TupleOf} from './ListOf'

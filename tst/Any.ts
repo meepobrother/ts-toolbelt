@@ -1,6 +1,6 @@
 /* tslint:disable */
 
-import {Test, A} from '../src/index'
+import {Test, A, O} from '../src/index'
 
 const {checks, check} = Test
 
@@ -19,12 +19,28 @@ checks([
 ])
 
 // ---------------------------------------------------------------------------------------
+// CLEAN
+
+checks([
+    check<A.Clean<{a: string}>,                     {a: string},                Test.Pass>(),
+    check<A.Clean<{a: string} & number[]>,          {a: string} & number[],     Test.Pass>(),
+    check<A.Clean<[1, 2, 3]>,                       [1, 2, 3],                  Test.Pass>(),
+    check<A.Clean<[1, 2, 3] & []>,                  [1, 2, 3] & [],             Test.Pass>(),
+    check<A.Clean<A.Compute<[1, 2, 3] & {a: 3}>>,   [1, 2, 3] & {a: 3},         Test.Pass>(),
+    check<A.Clean<O.MergeUp<[1, 2], {a: 3}>>,       [1, 2] & {a: 3},            Test.Pass>(),
+    check<A.Clean<O.MergeUp<number[], []>>,         number[],                   Test.Pass>(),
+    check<A.Clean<O.MergeUp<string[], [1]>>,        Array<1 | string>,          Test.Pass>(),
+    check<A.Clean<{length: 0}>,                     {length: 0},                Test.Pass>(),
+    check<A.Clean<{[k: string]: string}>,           {[k: string]: string},      Test.Pass>(),
+])
+
+// ---------------------------------------------------------------------------------------
 // COMPUTE
 
 // Cannot be tested
 
 // ---------------------------------------------------------------------------------------
-// CONTAINS
+// IMPLEMENTS
 
 checks([
     check<A.Implements<any, any>,              1,     Test.Pass>(),

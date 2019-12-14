@@ -31,7 +31,16 @@ checks([
 
 checks([
     check<U.Has<1 | 2 | 3, string>,     0,      Test.Pass>(),
-    check<U.Has<1 | 2 | 3, 1>,          1,       Test.Pass>(),
+    check<U.Has<1 | 2 | 3, 1>,          1,      Test.Pass>(),
+])
+
+// ---------------------------------------------------------------------------------------
+// HASALL
+
+checks([
+    check<U.HasAll<1 | 2 | 3, string>,     0,      Test.Pass>(),
+    check<U.HasAll<1 | 2 | 3, 1>,          1,      Test.Pass>(),
+    check<U.HasAll<1 | 2 | 3, 1 | 4>,      0,      Test.Pass>(),
 ])
 
 // ---------------------------------------------------------------------------------------
@@ -95,6 +104,26 @@ checks([
 ])
 
 // ---------------------------------------------------------------------------------------
+// OMIT
+
+type U_OMIT    = {t: 'a'; o: string} | {t: 'b'; o: number} | [1, 2]
+type OMIT_U_O0 = {t: 'a'} | {t: 'b'} | [2];
+
+checks([
+    check<U.Omit<U_OMIT, 'o' | '0'>,    OMIT_U_O0,  Test.Pass>(),
+])
+
+// ---------------------------------------------------------------------------------------
+// PICK
+
+type U_PICK    = {t: 'a'; o: string} | {t: 'b'; o: number} | [1, 2]
+type PICK_U_t1 = {t: 'a'} | {t: 'b'} | [2];
+
+checks([
+    check<U.Pick<U_PICK, 't' | '1'>,    PICK_U_t1,  Test.Pass>(),
+])
+
+// ---------------------------------------------------------------------------------------
 // POP
 
 checks([
@@ -124,8 +153,8 @@ checks([
 ])
 
 // ---------------------------------------------------------------------------------------
-// TUPLEOF
+// LISTOF
 
 checks([
-    // check<U.TupleOf<1 | 2 | 3>,     [1, 2, 3],    Test.Pass>(), // order not guaranteed
+    // check<U.ListOf<1 | 2 | 3>,     [1, 2, 3],    Test.Pass>(), // order not guaranteed
 ])

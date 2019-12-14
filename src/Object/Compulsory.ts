@@ -17,7 +17,7 @@ type CompulsoryFlat<O> = {
  */
 type CompulsoryDeep<O> = {
     [K in keyof O]-?: CompulsoryDeep<NonNullable<O[K]>>
-} & {}
+}
 
 /**
  * @hidden
@@ -28,7 +28,7 @@ type CompulsoryPart<O extends object, depth extends Depth> = {
 }[depth]
 
 /** Make some fields of **`O`** compulsory (deeply or not)
- * (it's like **`Required`** & **`NonNullable`** at once).
+ * (it's like [[Required]] & [[NonNullable]] at once).
  * @param O to make compulsory
  * @param K to choose fields (?=`keyof O`)
  * @param depth to do it deeply (?=`'flat'`)

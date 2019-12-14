@@ -2,6 +2,297 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.13.5](https://github.com/pirix-gh/ts-toolbelt/compare/v4.13.4...v4.13.5) (2019-12-12)
+
+
+### Bug Fixes
+
+* **curry:** unary cannot be curried related to [#43](https://github.com/pirix-gh/ts-toolbelt/issues/43) ([e226931](https://github.com/pirix-gh/ts-toolbelt/commit/e226931cfddc90e046c2f7dc3ef88a39a981acc5))
+
+### [4.13.4](https://github.com/pirix-gh/ts-toolbelt/compare/v4.13.3...v4.13.4) (2019-12-11)
+
+
+### Others
+
+* **f.pipe, f.compose:** move P as last typeparam ([9c86f43](https://github.com/pirix-gh/ts-toolbelt/commit/9c86f435175ed15c94c1538a043210ddf5085097))
+
+### [4.13.3](https://github.com/pirix-gh/ts-toolbelt/compare/v4.13.2...v4.13.3) (2019-12-11)
+
+
+### Others
+
+* cleanup ([a4727e5](https://github.com/pirix-gh/ts-toolbelt/commit/a4727e563bb7db416ab465618e0cd02c9b777988))
+* exclude ([c90d6bf](https://github.com/pirix-gh/ts-toolbelt/commit/c90d6bfa6df7dd14c2d0347dbae77433eed143e0))
+* moved optional param values to the left ([803bbd8](https://github.com/pirix-gh/ts-toolbelt/commit/803bbd8efdc3eadea893ee0a5db80637f22cc150))
+
+### [4.13.2](https://github.com/pirix-gh/ts-toolbelt/compare/v4.13.1...v4.13.2) (2019-12-11)
+
+
+### Others
+
+* move Promisable ([e863c43](https://github.com/pirix-gh/ts-toolbelt/commit/e863c43ea9bfea16747fe70702acf7945dd64097))
+* readme ([24df3e2](https://github.com/pirix-gh/ts-toolbelt/commit/24df3e27a2ca6d07e7033f52d5292c09a64fcd18))
+
+### [4.13.1](https://github.com/pirix-gh/ts-toolbelt/compare/v4.13.0...v4.13.1) (2019-12-11)
+
+
+### Others
+
+* better types for pipe/compose ([405fa8e](https://github.com/pirix-gh/ts-toolbelt/commit/405fa8eef2086b2ba70bb5820223b6de390d411d))
+* cleanup ([58dc4af](https://github.com/pirix-gh/ts-toolbelt/commit/58dc4afd328a4f1d489785c0b4d5dae27ff1b799))
+* cleanup ([e319f6c](https://github.com/pirix-gh/ts-toolbelt/commit/e319f6c3c2c727e58162bdd4fb5da804c469f227))
+* cleanup ([1432f07](https://github.com/pirix-gh/ts-toolbelt/commit/1432f075ccee735a88c2a98c385095d24e8b09c9))
+
+## [4.13.0](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.13...v4.13.0) (2019-12-11)
+
+
+### Features
+
+* **u.omit/pick:** pick or omit on unions ([d90faa1](https://github.com/pirix-gh/ts-toolbelt/commit/d90faa17f5005e0492babe00c0de69621b72e909))
+
+
+### Bug Fixes
+
+* **f.pipe/compose:** wrongs async types ([52ef6fd](https://github.com/pirix-gh/ts-toolbelt/commit/52ef6fd51312158dc38d008400689bb9d206f0ec))
+
+
+### Others
+
+* better types for pipe/compose ([97d4782](https://github.com/pirix-gh/ts-toolbelt/commit/97d47821cc02565b6a8e5ae3a9d76c6170422c6b))
+* rename to Omit ([5a46b9a](https://github.com/pirix-gh/ts-toolbelt/commit/5a46b9a22e7fc0c56488938ab9259c9e3af6fd0a))
+
+### [4.12.13](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.12...v4.12.13) (2019-12-03)
+
+
+### Others
+
+* cleanup ([cabcf91](https://github.com/pirix-gh/ts-toolbelt/commit/cabcf917a1558e3ef595a443a4e57735d6b18a63))
+
+### [4.12.12](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.11...v4.12.12) (2019-12-03)
+
+
+### Bug Fixes
+
+* **a.clean:** error on mapped types [#74](https://github.com/pirix-gh/ts-toolbelt/issues/74) ([d7d5055](https://github.com/pirix-gh/ts-toolbelt/commit/d7d505507b0ab65b5d7e77da20ab285ea7e1446b))
+
+
+### Others
+
+* **a.clean:** update ([5598b7c](https://github.com/pirix-gh/ts-toolbelt/commit/5598b7ce73f40106a653e0b1ea1e03a78bb1497a))
+
+### [4.12.11](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.10...v4.12.11) (2019-12-02)
+
+
+### Others
+
+* readme ([2f0b1ef](https://github.com/pirix-gh/ts-toolbelt/commit/2f0b1ef08364aaddec7dca6a90423f418f88c959))
+* readme ([84399ce](https://github.com/pirix-gh/ts-toolbelt/commit/84399ceb39d900095287f2175e701bce373c2041))
+
+### [4.12.10](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.9...v4.12.10) (2019-12-02)
+
+
+### Bug Fixes
+
+* **deploy:** restore Ensure ([d020658](https://github.com/pirix-gh/ts-toolbelt/commit/d020658461fad4fb8e355c997506383e3fef715f))
+
+### [4.12.9](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.8...v4.12.9) (2019-12-02)
+
+
+### Bug Fixes
+
+* typo ([fbfe638](https://github.com/pirix-gh/ts-toolbelt/commit/fbfe6387c37d723c08a25a24b5f1d618ba591a60))
+* **l.objectof:** improved type preservation ([cd690f7](https://github.com/pirix-gh/ts-toolbelt/commit/cd690f7a0270f7fc5632091aa6b1a8c320294fa3))
+
+
+### Others
+
+* move Clean ([f15add7](https://github.com/pirix-gh/ts-toolbelt/commit/f15add7e93b38f36d37487307bfa5b8bbf977484))
+* rename Tuple to List ([2d15763](https://github.com/pirix-gh/ts-toolbelt/commit/2d157633be86b19aa9e5a0b48896cdcd8e9c3fb8))
+
+### [4.12.8](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.7...v4.12.8) (2019-12-02)
+
+
+### Bug Fixes
+
+* **t.objectof:** type distribution ([765e94a](https://github.com/pirix-gh/ts-toolbelt/commit/765e94ac8345f3aa8d8888dd2c2b61fd4934a5bb))
+
+
+### Others
+
+* reformat type distribution ([c825580](https://github.com/pirix-gh/ts-toolbelt/commit/c8255801e853212f669fa40326ff018b2c09fb4a))
+
+### [4.12.7](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.6...v4.12.7) (2019-12-02)
+
+
+### Others
+
+* **o.mergeup:** give up tuple handling ([5214d04](https://github.com/pirix-gh/ts-toolbelt/commit/5214d04152413cda69dd5fc25ff12e4c42775f3f))
+
+### [4.12.6](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.5...v4.12.6) (2019-12-01)
+
+
+### Bug Fixes
+
+* **clean:** cleaner clean ([cc1d7d6](https://github.com/pirix-gh/ts-toolbelt/commit/cc1d7d6a1317d42f83003bc130ed92e7e9c39a12))
+
+### [4.12.5](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.4...v4.12.5) (2019-11-30)
+
+
+### Others
+
+* cleanup ([fcdca7a](https://github.com/pirix-gh/ts-toolbelt/commit/fcdca7a46ff8c8e77690a8d1cbeee53ec852f12a))
+* **o.mergeup:** lighter computation ([6856251](https://github.com/pirix-gh/ts-toolbelt/commit/6856251e8089b0fc61995accb937174f63b5c3d6))
+
+### [4.12.4](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.3...v4.12.4) (2019-11-30)
+
+
+### Bug Fixes
+
+* **o.mergeup:** overcomputation recursive ([4fbf5d2](https://github.com/pirix-gh/ts-toolbelt/commit/4fbf5d2ea5b2c62d32e99ae66c85317833098ed2))
+
+### [4.12.3](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.2...v4.12.3) (2019-11-30)
+
+
+### Bug Fixes
+
+* **o.mergeup:** unsound computation ([49c4ce4](https://github.com/pirix-gh/ts-toolbelt/commit/49c4ce4aacbd582d30c77a3b03341411289a30c7))
+
+### [4.12.2](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.1...v4.12.2) (2019-11-30)
+
+
+### Bug Fixes
+
+* **deep:** over-computation on deep types & recursive mapped types ([1b1ac71](https://github.com/pirix-gh/ts-toolbelt/commit/1b1ac71c337619b5a7e75cf8dca2612fdc0e41ff))
+
+### [4.12.1](https://github.com/pirix-gh/ts-toolbelt/compare/v4.12.0...v4.12.1) (2019-11-30)
+
+
+### Bug Fixes
+
+* **m.json:** working JSON types + tests ([7917679](https://github.com/pirix-gh/ts-toolbelt/commit/7917679be161ab11e532695b998b514de422d246))
+
+## [4.12.0](https://github.com/pirix-gh/ts-toolbelt/compare/v4.11.0...v4.12.0) (2019-11-30)
+
+
+### Features
+
+* **m.json:** json types ([43c7437](https://github.com/pirix-gh/ts-toolbelt/commit/43c7437453253e1e1a01f5f6d6ffae6a3397bdd7))
+
+## [4.11.0](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.21...v4.11.0) (2019-11-30)
+
+
+### Features
+
+* **u.hasall:** check if union contained within union ([81ccfd5](https://github.com/pirix-gh/ts-toolbelt/commit/81ccfd5f43fcb531afb5ce452bf685f09a1794bb))
+
+
+### Bug Fixes
+
+* **o.clean:** swallowed keys named like array keys ([a8f190c](https://github.com/pirix-gh/ts-toolbelt/commit/a8f190c29de034b2def7d6f8949730bc5e36519d))
+
+
+### Others
+
+* readme ([c401613](https://github.com/pirix-gh/ts-toolbelt/commit/c40161395d0d94a85055a155e9e07ae7ef2fac32))
+
+### [4.10.21](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.20...v4.10.21) (2019-11-21)
+
+
+### Others
+
+* fix errors ([a08aae3](https://github.com/pirix-gh/ts-toolbelt/commit/a08aae3597f5a9c638d0641a5a0881acbeaaf076))
+* indent ([8506bb3](https://github.com/pirix-gh/ts-toolbelt/commit/8506bb33c8d394a91be79974cdd9a01c69d110fc))
+* readme ([2b2d577](https://github.com/pirix-gh/ts-toolbelt/commit/2b2d577eec0e36c32e80f9ba99f9e7c608dd8ed1))
+* readme ([388ffe5](https://github.com/pirix-gh/ts-toolbelt/commit/388ffe54b8538cd14d317aa359159106afa54db1))
+* **promisify:** update ([8dc2c03](https://github.com/pirix-gh/ts-toolbelt/commit/8dc2c03125f72b2d6c1bd35def860f358a019516))
+
+### [4.10.20](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.19...v4.10.20) (2019-11-20)
+
+
+### Others
+
+* readme ([b60feb7](https://github.com/pirix-gh/ts-toolbelt/commit/b60feb751892553756db1302921bc60ae4f3adf4))
+
+### [4.10.19](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.18...v4.10.19) (2019-11-20)
+
+
+### Others
+
+* readme ([ededc94](https://github.com/pirix-gh/ts-toolbelt/commit/ededc9410c14042b15048ddc86cba945b4e705ca))
+
+### [4.10.18](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.17...v4.10.18) (2019-11-20)
+
+
+### Others
+
+* readme ([ceec4af](https://github.com/pirix-gh/ts-toolbelt/commit/ceec4afca16697efcdc50f55990bfbb86c77733f))
+
+### [4.10.17](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.16...v4.10.17) (2019-11-20)
+
+
+### Others
+
+* readme ([2fa6502](https://github.com/pirix-gh/ts-toolbelt/commit/2fa65020f1862b4980b2ec8ba063c6f578b3f44c))
+
+### [4.10.16](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.15...v4.10.16) (2019-11-20)
+
+
+### Others
+
+* readme ([e47ac4a](https://github.com/pirix-gh/ts-toolbelt/commit/e47ac4a2db824fe2d50db25a935a321830f2a2f4))
+
+### [4.10.15](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.14...v4.10.15) (2019-11-20)
+
+
+### Others
+
+* readme ([5591c38](https://github.com/pirix-gh/ts-toolbelt/commit/5591c38941182c4a2720c3960d073c4080670d7c))
+
+### [4.10.14](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.13...v4.10.14) (2019-11-20)
+
+
+### Others
+
+* **all:** added cross-references, links ([09b57e5](https://github.com/pirix-gh/ts-toolbelt/commit/09b57e5bcfbb2324e8cd5767bb0889fa6f928481))
+
+### [4.10.13](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.12...v4.10.13) (2019-11-18)
+
+
+### Others
+
+* readme ([02c25b7](https://github.com/pirix-gh/ts-toolbelt/commit/02c25b7053e12ace1b344a4631b1907fec562e95))
+* readme ([f24d761](https://github.com/pirix-gh/ts-toolbelt/commit/f24d7618c57091895b78fda87cf349adf124728f))
+
+### [4.10.12](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.11...v4.10.12) (2019-11-17)
+
+
+### Bug Fixes
+
+* **release:** ci not releasing ([3072c91](https://github.com/pirix-gh/ts-toolbelt/commit/3072c91b619a25b0911952642f76707dd3aea617))
+
+### [4.10.11](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.10...v4.10.11) (2019-11-17)
+
+
+### Bug Fixes
+
+* **release:** not out folder ([19bf5d0](https://github.com/pirix-gh/ts-toolbelt/commit/19bf5d09aeaed78492ae4eb1d62a63c2c3064e2b))
+
+### [4.10.10](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.9...v4.10.10) (2019-11-17)
+
+
+### Others
+
+* readme ([32fd31a](https://github.com/pirix-gh/ts-toolbelt/commit/32fd31aecd5c547c0f5b51d78f60650b1a2aefa4))
+
+### [4.10.9](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.8...v4.10.9) (2019-11-17)
+
+
+### Others
+
+* readme ([c749e1a](https://github.com/pirix-gh/ts-toolbelt/commit/c749e1abd703d5023aeea9bf4381f0bcf02967a8))
+* **number:** fast number to string ([161f247](https://github.com/pirix-gh/ts-toolbelt/commit/161f247a11ca5c8c9f11e8b2fea76d6277655c73))
+* fix tests allowing broken types ([c70f49f](https://github.com/pirix-gh/ts-toolbelt/commit/c70f49f708c213cc5e9641312ef328279a47a289))
+
 ### [4.10.8](https://github.com/pirix-gh/ts-toolbelt/compare/v4.10.7...v4.10.8) (2019-11-14)
 
 

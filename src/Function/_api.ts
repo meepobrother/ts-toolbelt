@@ -1,9 +1,12 @@
-export {Composer, Compose} from './Compose'
+/** @ignore *//** */
+
+export {Compose, Composed, Composer} from './Compose'
 export {Curry} from './Curry'
 export {Function} from './Function'
 export {Length} from './Length'
 export {NoInfer} from './NoInfer'
 export {Parameters} from './Parameters'
-export {Piper, Pipe} from './Pipe'
+export {Pipe, Piped, Piper} from './Pipe'
+export {Promisify} from './Promisify'
 export {Return} from './Return'
 // export {UnCurry} from './UnCurry'

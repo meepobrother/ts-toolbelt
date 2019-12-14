@@ -173,19 +173,6 @@ checks([
 ])
 
 // ---------------------------------------------------------------------------------------
-// ENSURE
-
-checks([
-    check<O.Ensure<{a: string}>,                {a: string},            Test.Pass>(),
-    check<O.Ensure<{a: string} & number[]>,     {a: string} & number[], Test.Pass>(),
-    check<O.Ensure<[1, 2, 3]>,                  {0: 1, 1: 2, 2: 3},     Test.Pass>(),
-    check<O.Ensure<[1, 2, 3] & []>,             {0: 1, 1: 2, 2: 3},     Test.Pass>(),
-    check<O.Ensure<O.MergeUp<[1, 2], {a: 3}>>,  {0: 1, 1: 2, a: 3},     Test.Pass>(),
-    check<O.Ensure<O.MergeUp<number[], []>>,    number[],               Test.Pass>(),
-    check<O.Ensure<O.MergeUp<string[], [1]>>,   Array<1 | string>,      Test.Pass>(),
-])
-
-// ---------------------------------------------------------------------------------------
 // EXCLUDE
 
 type EXCLUDE_O_O1_DEFAULT = {}
@@ -482,7 +469,8 @@ type O_MERGEUP = {
         a: {
             b?: {}
         }
-    }
+    },
+    k?: {[k: string]: string}
 }
 
 type O1_MERGEUP = {
@@ -513,6 +501,7 @@ type O1_MERGEUP = {
             }
         }
     }
+    k: {}
 }
 
 type MERGEUP_O_O1 = {
@@ -546,7 +535,8 @@ type MERGEUP_O_O1 = {
         a: {
             b?: {}
         }
-    }
+    },
+    k: {} | {[k: string]: string}
 };
 
 type MERGEUP_O_O1_DEEP = {
@@ -563,16 +553,16 @@ type MERGEUP_O_O1_DEEP = {
         a : string | object;
         b?: number | object;
         c : object
-    },
+    }
     g?: {
         a?: string
         b?: number
     }
     h: {
-        a: string | number
+        a: number
     } | undefined
     i: {
-        a: string | number
+        a: string
     } | undefined
     j: {
         a: {
@@ -580,7 +570,8 @@ type MERGEUP_O_O1_DEEP = {
                 c: 1
             }
         }
-    }
+    },
+    k: {[k: string]: string}
 };
 
 checks([
@@ -1011,9 +1002,9 @@ checks([
 ])
 
 // ---------------------------------------------------------------------------------------
-// TUPLEOF
+// LISTOF
 
-type O_TUPLEOF = {
+type O_LISTOF = {
     '0': 1
     '2': 3
     '3': never
@@ -1021,10 +1012,10 @@ type O_TUPLEOF = {
     '6': 6
 }
 
-type TUPLEOF_O = [1, 3, never, 5, 6];
+type LISTOF_O = [1, 3, never, 5, 6];
 
 checks([
-    check<O.TupleOf<O_TUPLEOF>,    TUPLEOF_O,    Test.Pass>(),
+    check<O.ListOf<O_LISTOF>,    LISTOF_O,    Test.Pass>(),
 ])
 
 // ---------------------------------------------------------------------------------------

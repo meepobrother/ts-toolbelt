@@ -3,6 +3,7 @@ import {Pick} from './Pick'
 import {Depth} from './_Internal'
 import {Index} from '../Any/Index'
 import {Implements} from '../Any/Implements'
+import {Compute} from '../Any/Compute'
 
 /**
  * @hidden
@@ -16,7 +17,7 @@ type RequiredFlat<O> = {
  */
 type RequiredDeep<O> = {
     [K in keyof O]-?: RequiredDeep<O[K]>
-} & {}
+}
 
 /**
  * @hidden

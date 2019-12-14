@@ -4,7 +4,6 @@ import {Depth} from './_Internal'
 import {Pick} from './Pick'
 import {Index} from '../Any/Index'
 import {Implements} from '../Any/Implements'
-import {Keys} from './Keys'
 
 /**
  * @hidden
@@ -18,7 +17,7 @@ type NullableFlat<O> = {
  */
 type NullableDeep<O> = {
     [K in keyof O]: NullableDeep<UNullable<O[K]>>
-} & {}
+}
 
 /**
  * @hidden
